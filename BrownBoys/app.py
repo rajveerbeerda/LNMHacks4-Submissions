@@ -11,13 +11,13 @@ from dataset import getDataFromPhone, getRecords, checkOrderId
 
 app = Flask(__name__)
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="My First Project1-7c8551eba2c5.json"
-os.environ["DIALOGFLOW_PROJECT_ID"]="my-first-project1-f759c"
-os.environ["OMDB_API_KEY"]="5bbe8ce8"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="GOOGLE_APPLICATION_CREDENTIALS"
+os.environ["DIALOGFLOW_PROJECT_ID"]="DIALOGFLOW_PROJECT_ID"
+os.environ["OMDB_API_KEY"]="OMDB_API_KEY"
 
 # initialize Pusher
 pusher_client = pusher.Pusher(
-  app_id='883501',
+  app_id='PUSHER_APP_ID',
   key='0a5aae710e857f5b1880',
   secret='d523fd2e82c4d8cf22d4',
   cluster='ap2',
